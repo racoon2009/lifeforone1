@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Kenyan+Coffee:wght@700&family=Gnuolane&display=swap');
+
+body {
+  font-family: 'Gnuolane', sans-serif;
+  background-color: #111111;
+  color: #ffffff;
+  padding: 40px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+h1, h2 {
+  font-family: 'Kenyan Coffee', sans-serif;
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.centered-button {
+  background-color: #ffffff;
+  color: #111111;
+  padding: 18px 35px;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: background-color 0.3s, transform 0.3s ease-in-out;
+  margin-top: 20px;
+}
+
+.centered-button:hover {
+  background-color: #333333;
+  color: #ffffff;
+  transform: translateY(-5px);
+}
+
+form {
+  max-width: 500px;
+  width: 100%;
+  background-color: #222222;
+  padding: 30px;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  margin-top: 30px;
+  border-radius: 6px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 18px;
+  margin-bottom: 20px;
+  background-color: #333333;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s, border-color 0.3s ease-in-out;
+}
+
+input:focus, textarea:focus {
+  background-color: #444444;
+  border-color: #aaaaaa;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+  height: 120px;
+}
+
+button[type="submit"] {
+  background-color: #ffffff;
+  color: #111111;
+  padding: 18px 35px;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: background-color 0.3s, transform 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color: #333333;
+  color: #ffffff;
+  transform: translateY(-5px);
+}
+
+.leaderboard-section {
+  width: 100%;
+  max-width: 800px;
+  background-color: #222222;
+  padding: 30px;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 6px;
+  margin-top: 40px;
+}
+
+.leaderboard-section div {
+  padding: 20px;
+  background-color: #333333;
+  margin-bottom: 15px;
+  border: 2px solid #ffffff;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.leaderboard-section h2 {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 600px) {
+  form {
+    width: 90%;
+  }
+
+  .leaderboard-section {
+    width: 90%;
+  }
+}
